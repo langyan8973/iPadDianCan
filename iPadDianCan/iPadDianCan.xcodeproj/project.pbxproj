@@ -166,7 +166,7 @@
 		4CE84B1617302FA10028EB30 /* OrderListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListController.m; sourceTree = "<group>"; };
 		4CE84B18173032B30028EB30 /* RecipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewCell.h; sourceTree = "<group>"; };
 		4CE84B19173032B30028EB30 /* RecipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewCell.m; sourceTree = "<group>"; };
-		D026ABE1172785C70093CBC7 /* iPadDianCan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadDianCan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D026ABE1172785C70093CBC7 /* 微特 HD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微特 HD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D026ABE4172785C70093CBC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D026ABE6172785C70093CBC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D026ABE8172785C70093CBC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -278,7 +278,7 @@
 		D026ABE2172785C70093CBC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D026ABE1172785C70093CBC7 /* iPadDianCan.app */,
+				D026ABE1172785C70093CBC7 /* 微特 HD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 			);
 			name = iPadDianCan;
 			productName = iPadDianCan;
-			productReference = D026ABE1172785C70093CBC7 /* iPadDianCan.app */;
+			productReference = D026ABE1172785C70093CBC7 /* 微特 HD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -698,7 +698,7 @@
 				GCC_PREFIX_HEADER = "iPadDianCan/iPadDianCan-Prefix.pch";
 				INFOPLIST_FILE = "iPadDianCan/iPadDianCan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微特 HD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -710,7 +710,7 @@
 				GCC_PREFIX_HEADER = "iPadDianCan/iPadDianCan-Prefix.pch";
 				INFOPLIST_FILE = "iPadDianCan/iPadDianCan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微特 HD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

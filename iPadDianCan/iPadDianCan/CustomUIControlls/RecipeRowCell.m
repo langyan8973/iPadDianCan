@@ -99,7 +99,6 @@
 }
 -(void)dealloc{
     [_recipes release];
-    [imgDelegate release];
     [super dealloc];
 }
 @end

@@ -11,6 +11,6 @@
 #import "RecipeView.h"
 @interface RecipeRowCell : UITableViewCell
 @property(nonatomic,retain) NSMutableArray *recipes;
-@property(nonatomic,retain) id<ImageClickDelegate> imgDelegate;
+@property(nonatomic,assign) id<ImageClickDelegate> imgDelegate;
 -(RecipeView *)getRecipeViewByRecipe:(Recipe *)recipe;
 @end

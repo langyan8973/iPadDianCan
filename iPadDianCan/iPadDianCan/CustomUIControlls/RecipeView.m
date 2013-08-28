@@ -138,7 +138,6 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     [rNameLabel release];
     [priceLabel release];
     [countLabel release];
-    [imageDelegate release];
     [super dealloc];
 }
 @end

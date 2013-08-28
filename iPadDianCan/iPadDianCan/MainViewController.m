@@ -577,8 +577,14 @@
             [ud setValue:0 forKey:@"rid"];
             [ud synchronize];
             
+            orderListController.checkOrderDelegate=nil;
+            orderListController.bgClickDelegate = nil;
+            recipeSearchController.locationToCellDelegate=nil;
+            viewController.locationToCellDelegate=nil;
+            viewController.refreshOrderDelegate=nil;
+            foldingViewController.searchDelegate=nil;
+            foldingViewController.locationToCellDelegate=nil;
             [self.navigationController popViewControllerAnimated:YES];
-            [self release];
         }
         
     }

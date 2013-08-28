@@ -59,6 +59,16 @@
 */
 
 #pragma mark -UITextViewDelegate
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    if (textField.text==nil) {
+        code=0;
+    }
+    else{
+        NSNumber *num=(NSNumber*)textField.text;
+        code=num.integerValue;
+    }
+
+}
 -(void)textViewDidChange:(UITextView *)textView{
     if (textView.text==nil) {
         code=0;
@@ -72,6 +82,7 @@
 
 #pragma  mark - 点击按钮
 -(void)loginBtnClick{
+    [codeTextView resignFirstResponder];
     if (code==0) {
         codeTextView.layer.borderColor = [UIColor redColor].CGColor;
         return;
