@@ -24,21 +24,21 @@
     BOOL canClickPop;
 }
 
-@property(nonatomic,assign)UITableView *table;
+@property(nonatomic,retain)UITableView *table;
 @property(nonatomic,assign)Order *currentOrder;
 @property(nonatomic,assign)NSMutableArray *allCategores;
-@property(nonatomic,assign)NSMutableArray *orderCategores;//所有已点种类
+@property(nonatomic,retain)NSMutableArray *orderCategores;//所有已点种类
 @property(nonatomic)BOOL isUpdating;
 @property(nonatomic)BOOL oPend;
 @property(nonatomic,assign)UIButton *submitButton;
-@property(nonatomic,assign)UILabel *priceLabel;
-@property(nonatomic,assign)UILabel *countLabel;
-@property(nonatomic,assign)UIView *bgView;
-@property(nonatomic,assign)UIView *orderContainer;
+@property(nonatomic,retain)UILabel *priceLabel;
+@property(nonatomic,retain)UILabel *countLabel;
+@property(nonatomic,retain)UIView *bgView;
+@property(nonatomic,retain)UIView *orderContainer;
 @property(nonatomic,assign)UIButton *checkButton;
 @property(nonatomic,assign)UIButton *refreshButton;
 @property(nonatomic,assign)UIButton *callButton;
-@property(nonatomic,assign)UILabel *deskLabel;
+@property(nonatomic,retain)UILabel *deskLabel;
 
 @property(nonatomic,assign) id<CheckOrderDelegate> checkOrderDelegate;
 @property(nonatomic,assign) id<BgClickDelegate> bgClickDelegate;

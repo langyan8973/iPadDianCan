@@ -10,8 +10,8 @@
 #import "CategoryTableViewController.h"
 #import "RecipeSearchControllerViewController.h"
 @interface FoldingViewController : UIView
-@property(nonatomic,assign)UITableView *categoriesTable;
-@property(nonatomic,assign)CategoryTableViewController *categoryTableViewController;
+@property(nonatomic,retain)UITableView *categoriesTable;
+@property(nonatomic,retain)CategoryTableViewController *categoryTableViewController;
 @property(nonatomic,assign)NSMutableArray *allCategores;//所有种类
 @property(nonatomic,assign) UITableView *foodTable;
 @property(nonatomic)BOOL oPened;

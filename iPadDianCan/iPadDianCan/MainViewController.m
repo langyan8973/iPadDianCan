@@ -248,7 +248,7 @@
 #pragma mark -UITableSouceDelegate
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return allCategores.count;
+    return  allCategores.count;
 }
 
 

@@ -75,6 +75,8 @@
 #pragma mark - 释放内存
 
 -(void)dealloc{
+    [categoryTableViewController release];
+    [categoriesTable release];
     [super dealloc];
 }
 @end

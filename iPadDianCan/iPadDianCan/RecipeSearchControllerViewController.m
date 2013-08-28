@@ -284,6 +284,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath{
 -(void)dealloc{
     [allRecipes release];
     [allIndexPaths release];
+    [_searchBar release];
+    [searchResultTable release];
+    [shadowView release];
+    [bgView release];
+    [searchView release];
     [super dealloc];
 }
 @end
