@@ -15,8 +15,8 @@
 
 @end
 
-@interface LoginView : UIView<UITextViewDelegate>{
-    UITextView *codeTextView;
+@interface LoginView : UIView<UITextFieldDelegate>{
+    UITextField *codeTextView;
 //    UITextView *userTextView;
 //    UITextView *passTextView;
     NSInteger code;

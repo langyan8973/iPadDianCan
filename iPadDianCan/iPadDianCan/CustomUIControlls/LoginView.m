@@ -26,15 +26,16 @@
         [self addSubview:ivtbbg];
         [ivtbbg release];
         
-        codeTextView=[[UITextView alloc] initWithFrame:CGRectMake(264, 500, 240,40)];
+        codeTextView=[[UITextField alloc] initWithFrame:CGRectMake(264, 500, 240,40)];
         [codeTextView setBackgroundColor:[UIColor whiteColor]];
         codeTextView.delegate=self;
         [codeTextView setKeyboardType:UIKeyboardTypeNumberPad];
         codeTextView.layer.borderColor = [UIColor grayColor].CGColor;
         codeTextView.layer.cornerRadius =10.0;
         codeTextView.textColor=[UIColor blackColor];
-        codeTextView.font = [UIFont boldSystemFontOfSize:25];
+        codeTextView.font = [UIFont boldSystemFontOfSize:32];
         codeTextView.textAlignment=UITextAlignmentCenter;
+        codeTextView.placeholder=@"请输入餐厅编码";
          [self addSubview:codeTextView];
         [codeTextView becomeFirstResponder];
         
