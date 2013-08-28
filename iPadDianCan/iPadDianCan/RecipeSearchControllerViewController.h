@@ -17,8 +17,8 @@
 
 @interface RecipeSearchControllerViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UIScrollViewDelegate>
 @property(nonatomic,assign)NSMutableArray *allCategores;//所有种类
-@property(nonatomic,assign)NSMutableArray *allRecipes;
-@property(nonatomic,assign)NSMutableArray *allIndexPaths;
+@property(nonatomic,retain)NSMutableArray *allRecipes;
+@property(nonatomic,retain)NSMutableArray *allIndexPaths;
 @property(nonatomic,assign)UISearchBar *searchBar;
 @property(nonatomic,assign)UITableView *searchResultTable;
 @property(nonatomic,assign)UIView *shadowView;

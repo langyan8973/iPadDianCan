@@ -98,7 +98,6 @@
     [super layoutSubviews];
 }
 -(void)dealloc{
-    [_recipes release];
     [super dealloc];
 }
 @end

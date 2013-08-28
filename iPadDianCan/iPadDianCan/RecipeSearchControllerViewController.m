@@ -282,6 +282,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath{
 }
 
 -(void)dealloc{
+    [allRecipes release];
+    [allIndexPaths release];
     [super dealloc];
 }
 @end

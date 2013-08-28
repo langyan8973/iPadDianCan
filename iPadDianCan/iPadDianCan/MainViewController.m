@@ -26,6 +26,7 @@
 @end
 
 @implementation MainViewController
+@synthesize recipeSearchController;
 @synthesize foodTable;
 @synthesize foldingViewController;
 @synthesize mainContentView;
@@ -576,14 +577,7 @@
             NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
             [ud setValue:0 forKey:@"rid"];
             [ud synchronize];
-            
-            orderListController.checkOrderDelegate=nil;
-            orderListController.bgClickDelegate = nil;
-            recipeSearchController.locationToCellDelegate=nil;
-            viewController.locationToCellDelegate=nil;
-            viewController.refreshOrderDelegate=nil;
-            foldingViewController.searchDelegate=nil;
-            foldingViewController.locationToCellDelegate=nil;
+            foldingViewController.searchDelegate = nil;
             [self.navigationController popViewControllerAnimated:YES];
         }
         

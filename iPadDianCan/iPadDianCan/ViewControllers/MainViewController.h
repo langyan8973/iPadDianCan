@@ -21,10 +21,10 @@
 @interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,ImageClickDelegate,UIGestureRecognizerDelegate,CheckOrderDelegate,SearchViewDelegate,LocationToCellDelegate,RefreshOrderDelegate,BgClickDelegate>{
     NSInteger pageCount;
     HHFullScreenViewController *viewController;
-    RecipeSearchControllerViewController *recipeSearchController;
     NSMutableArray *allIndexPaths;
     NSMutableArray *allRecipes;
 }
+@property(nonatomic,retain)RecipeSearchControllerViewController *recipeSearchController;
 @property(nonatomic,retain)UITableView *foodTable;
 @property(nonatomic,retain)FoldingViewController *foldingViewController;
 @property(nonatomic,retain)UIView *mainContentView;
