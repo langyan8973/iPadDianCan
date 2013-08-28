@@ -1,0 +1,25 @@
+//
+// Prefix header for all source files of the 'iPadDianCan' target in the 'iPadDianCan' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+//#define SERVERADDRESS @"http://taochike.sinaapp.com/rest/1/taochike/" //服务器地址
+//#define IMAGESERVERADDRESS @"http://taochike-menuimages.stor.sinaapp.com/medium/" //图片服务器地址
+//#define LARGEIMAGESERVERADDRESS @"http://taochike-menuimages.stor.sinaapp.com/big/" //图片服务器地址
+//#define SMALLIMAGESERVERADDRESS @"http://taochike-menuimages.stor.sinaapp.com/small/"
+
+#define SERVERADDRESS @"http://159.226.110.64/chihuoapp/rest" //服务器地址
+#define IMAGESERVERADDRESS @"http://159.226.110.64:8001/medium/" //图片服务器地址
+#define LARGEIMAGESERVERADDRESS @"http://159.226.110.64:8001/big/" //图片服务器地址
+#define SMALLIMAGESERVERADDRESS @"http://159.226.110.64:8001/small/"
+#define KBadgeNotification @"updateBadgeNotification" //点菜数目通知
+#define LogoutNotification @"restaurantLogout"
