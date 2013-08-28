@@ -2,7 +2,7 @@
 //  LoginViewController.h
 //  iPadDianCan
 //
-//  Created by 刘岩 on 13-8-19.
+//  Created by 刘岩1 on 13-8-19.
 //  Copyright (c) 2013年 ztb. All rights reserved.
 //
 
