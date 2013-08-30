@@ -29,8 +29,6 @@ static CATransform3D CATransform3DMakePerspective(CGFloat z) {
 
 - (void)dealloc
 {
-//    [fromView release];
-//    [toView release];
     [super dealloc];
 }
 

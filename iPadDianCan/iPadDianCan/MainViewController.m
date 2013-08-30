@@ -685,6 +685,10 @@
     [allIndexPaths release];
     [recipeSearchController release];
     [allRecipes release];
+    if (viewController.oPened) {
+        [viewController.fromView removeFromSuperview];
+        [viewController dismiss];
+    }
     [viewController release];
     [orderListController release];
     [super dealloc];
