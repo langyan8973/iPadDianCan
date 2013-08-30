@@ -28,7 +28,7 @@
 @implementation MainViewController
 @synthesize recipeSearchController;
 @synthesize foodTable;
-@synthesize foldingViewController;
+@synthesize foldingView;
 @synthesize mainContentView;
 @synthesize orderListController;
 @synthesize allCategores;
@@ -76,14 +76,14 @@
         [viewController.view setFrame:CGRectMake(0, 0, 702, 960)];
         viewController.locationToCellDelegate=self;
         viewController.refreshOrderDelegate=self;
-        foldingViewController=[[FoldingViewController alloc] initWithFrame:CGRectMake(0, 0, 45, 960)];
+        foldingView=[[FoldingView alloc] initWithFrame:CGRectMake(0, 0, 45, 960)];
         [self addTableShadow];
-        foldingViewController.foodTable=self.foodTable;
-        foldingViewController.searchDelegate=self;
-        foldingViewController.locationToCellDelegate=self;
+        foldingView.foodTable=self.foodTable;
+        foldingView.searchDelegate=self;
+        foldingView.locationToCellDelegate=self;
         
         mainContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 960)];
-        [mainContentView addSubview:foldingViewController];
+        [mainContentView addSubview:foldingView];
         [mainContentView addSubview:foodTable];
         [self.view addSubview:mainContentView];        
         
@@ -209,7 +209,7 @@
             }
             
             orderListController.allCategores=self.allCategores;
-            foldingViewController.allCategores=self.allCategores;
+            foldingView.allCategores=self.allCategores;
             recipeSearchController.allCategores=self.allCategores;
             [foodTable reloadData];
             
@@ -577,7 +577,7 @@
             NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
             [ud setValue:0 forKey:@"rid"];
             [ud synchronize];
-            foldingViewController.searchDelegate = nil;
+            foldingView.searchDelegate = nil;
             [self.navigationController popViewControllerAnimated:YES];
         }
         
@@ -679,7 +679,7 @@
 
 -(void)dealloc{
     [mainContentView release];
-    [foldingViewController release];
+    [foldingView release];
     [foodTable release];
     [allCategores release];
     [allIndexPaths release];

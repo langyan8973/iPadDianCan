@@ -1,5 +1,5 @@
 //
-//  FoldingViewController.h
+//  FoldingView.h
 //  iPadDianCan
 //
 //  Created by 刘岩 on 13-5-8.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CategoryTableViewController.h"
 #import "RecipeSearchControllerViewController.h"
-@interface FoldingViewController : UIView
+@interface FoldingView : UIView
 @property(nonatomic,retain)UITableView *categoriesTable;
 @property(nonatomic,retain)CategoryTableViewController *categoryTableViewController;
 @property(nonatomic,assign)NSMutableArray *allCategores;//所有种类

@@ -32,7 +32,7 @@
 		4C6E4032173C8AF3003490E8 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E4031173C8AF3003490E8 /* LoginView.m */; };
 		4C6E4034173C9134003490E8 /* restaurantloginbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6E4033173C9134003490E8 /* restaurantloginbtn.png */; };
 		4C6E4036173C929E003490E8 /* calledrestaurantloginbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6E4035173C929E003490E8 /* calledrestaurantloginbtn.png */; };
-		4C6E4930173A2099003028E4 /* FoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E492F173A2099003028E4 /* FoldingViewController.m */; };
+		4C6E4930173A2099003028E4 /* FoldingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E492F173A2099003028E4 /* FoldingView.m */; };
 		4C70E444174C651A00F6363E /* FoldingBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70E443174C651A00F6363E /* FoldingBack@2x.png */; };
 		4C70E446174C70EE00F6363E /* dish_46.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70E445174C70EE00F6363E /* dish_46.png */; };
 		4C70E448174C721300F6363E /* categoryCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70E447174C721300F6363E /* categoryCell@2x.png */; };
@@ -126,8 +126,8 @@
 		4C6E4031173C8AF3003490E8 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		4C6E4033173C9134003490E8 /* restaurantloginbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurantloginbtn.png; sourceTree = "<group>"; };
 		4C6E4035173C929E003490E8 /* calledrestaurantloginbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calledrestaurantloginbtn.png; sourceTree = "<group>"; };
-		4C6E492E173A2099003028E4 /* FoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldingViewController.h; path = ViewControllers/FoldingViewController.h; sourceTree = "<group>"; };
-		4C6E492F173A2099003028E4 /* FoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoldingViewController.m; path = ViewControllers/FoldingViewController.m; sourceTree = "<group>"; };
+		4C6E492E173A2099003028E4 /* FoldingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldingView.h; path = ../ViewControllers/FoldingView.h; sourceTree = "<group>"; };
+		4C6E492F173A2099003028E4 /* FoldingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoldingView.m; path = ../ViewControllers/FoldingView.m; sourceTree = "<group>"; };
 		4C70E443174C651A00F6363E /* FoldingBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FoldingBack@2x.png"; sourceTree = "<group>"; };
 		4C70E445174C70EE00F6363E /* dish_46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dish_46.png; sourceTree = "<group>"; };
 		4C70E447174C721300F6363E /* categoryCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "categoryCell@2x.png"; sourceTree = "<group>"; };
@@ -382,8 +382,6 @@
 			children = (
 				4C6DD539172BB6D1001BFDA0 /* CategoryTableViewController.h */,
 				4C6DD53A172BB6D1001BFDA0 /* CategoryTableViewController.m */,
-				4C6E492E173A2099003028E4 /* FoldingViewController.h */,
-				4C6E492F173A2099003028E4 /* FoldingViewController.m */,
 				4C5C4B4617368C1E006B3BFA /* HHFullScreenViewController.h */,
 				4C5C4B4717368C1E006B3BFA /* HHFullScreenViewController.m */,
 				D026AC3B17278A9D0093CBC7 /* MainViewController.h */,
@@ -410,6 +408,8 @@
 		D026AC3F172792F20093CBC7 /* CustomUIControlls */ = {
 			isa = PBXGroup;
 			children = (
+				4C6E492E173A2099003028E4 /* FoldingView.h */,
+				4C6E492F173A2099003028E4 /* FoldingView.m */,
 				4C75807C173B535A005826AC /* BadgeButton.h */,
 				4C75807D173B535A005826AC /* BadgeButton.m */,
 				4C9F37651732A43500F8A349 /* MyAlertView.h */,
@@ -606,7 +606,7 @@
 				4C9F37671732A43500F8A349 /* MyAlertView.m in Sources */,
 				4C5C4B4817368C1E006B3BFA /* HHFullScreenViewController.m in Sources */,
 				4C81042517375DCB0001CB9B /* RecipeLargeView.m in Sources */,
-				4C6E4930173A2099003028E4 /* FoldingViewController.m in Sources */,
+				4C6E4930173A2099003028E4 /* FoldingView.m in Sources */,
 				4C75807E173B535A005826AC /* BadgeButton.m in Sources */,
 				4C6E4032173C8AF3003490E8 /* LoginView.m in Sources */,
 				4C380B7F1745DE1B00133CF1 /* MainViewController.m in Sources */,

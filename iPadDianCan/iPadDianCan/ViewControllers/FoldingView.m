@@ -1,5 +1,5 @@
 //
-//  FoldingViewController.m
+//  FoldingView.m
 //  iPadDianCan
 //
 //  Created by 刘岩 on 13-5-8.
@@ -7,10 +7,10 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import "FoldingViewController.h"
+#import "FoldingView.h"
 #import "DisplayUtils.h"
 
-@implementation FoldingViewController
+@implementation FoldingView
 
 @synthesize categoriesTable,categoryTableViewController,allCategores=_allCategores,foodTable,oPened,searchDelegate,locationToCellDelegate=_locationToCellDelegate;
 

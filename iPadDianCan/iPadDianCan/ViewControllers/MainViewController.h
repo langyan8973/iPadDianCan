@@ -13,7 +13,7 @@
 #import "OrderListController.h"
 #import "RecipeView.h"
 #import "HHFullScreenViewController.h"
-#import "FoldingViewController.h"
+#import "FoldingView.h"
 #import "BadgeButton.h"
 #import "LoginView.h"
 #import "AFKPageFlipper.h"
@@ -26,7 +26,7 @@
 }
 @property(nonatomic,retain)RecipeSearchControllerViewController *recipeSearchController;
 @property(nonatomic,retain)UITableView *foodTable;
-@property(nonatomic,retain)FoldingViewController *foldingViewController;
+@property(nonatomic,retain)FoldingView *foldingView;
 @property(nonatomic,retain)UIView *mainContentView;
 @property(nonatomic,retain)NSMutableArray *allCategores;//所有种类
 @property(nonatomic,assign) BadgeButton *rightButton;
