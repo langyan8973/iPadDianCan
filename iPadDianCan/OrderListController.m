@@ -528,13 +528,6 @@
 
 #pragma mark -释放内存
 -(void)dealloc{
-    [orderCategores release];
-    [priceLabel release];
-    [countLabel release];
-    [deskLabel release];
-    [bgView release];
-    [orderContainer release];
-    [table release];
     [super dealloc];
 }
 @end

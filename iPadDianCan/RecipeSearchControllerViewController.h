@@ -17,13 +17,13 @@
 
 @interface RecipeSearchControllerViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UIScrollViewDelegate>
 @property(nonatomic,assign)NSMutableArray *allCategores;//所有种类
-@property(nonatomic,retain)NSMutableArray *allRecipes;
-@property(nonatomic,retain)NSMutableArray *allIndexPaths;
-@property(nonatomic,retain)UISearchBar *searchBar;
-@property(nonatomic,retain)UITableView *searchResultTable;
-@property(nonatomic,retain)UIView *shadowView;
-@property(nonatomic,retain)UIView *bgView;
-@property(nonatomic,retain)UIView *searchView;
+@property(nonatomic,assign)NSMutableArray *allRecipes;
+@property(nonatomic,assign)NSMutableArray *allIndexPaths;
+@property(nonatomic,assign)UISearchBar *searchBar;
+@property(nonatomic,assign)UITableView *searchResultTable;
+@property(nonatomic,assign)UIView *shadowView;
+@property(nonatomic,assign)UIView *bgView;
+@property(nonatomic,assign)UIView *searchView;
 @property(nonatomic,assign)id<LocationToCellDelegate> locationToCellDelegate;
 @property(nonatomic) NSInteger displayState;
 

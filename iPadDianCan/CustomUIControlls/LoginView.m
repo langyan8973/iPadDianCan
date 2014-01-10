@@ -26,16 +26,15 @@
         [self addSubview:ivtbbg];
         [ivtbbg release];
         
-        codeTextView=[[UITextField alloc] initWithFrame:CGRectMake(264, 500, 240,40)];
+        codeTextView=[[UITextView alloc] initWithFrame:CGRectMake(264, 500, 240,40)];
         [codeTextView setBackgroundColor:[UIColor whiteColor]];
         codeTextView.delegate=self;
         [codeTextView setKeyboardType:UIKeyboardTypeNumberPad];
         codeTextView.layer.borderColor = [UIColor grayColor].CGColor;
         codeTextView.layer.cornerRadius =10.0;
         codeTextView.textColor=[UIColor blackColor];
-        codeTextView.font = [UIFont boldSystemFontOfSize:32];
+        codeTextView.font = [UIFont boldSystemFontOfSize:25];
         codeTextView.textAlignment=UITextAlignmentCenter;
-        codeTextView.placeholder=@"请输入餐厅编码";
          [self addSubview:codeTextView];
         [codeTextView becomeFirstResponder];
         
@@ -59,16 +58,6 @@
 */
 
 #pragma mark -UITextViewDelegate
--(void)textFieldDidEndEditing:(UITextField *)textField{
-    if (textField.text==nil) {
-        code=0;
-    }
-    else{
-        NSNumber *num=(NSNumber*)textField.text;
-        code=num.integerValue;
-    }
-
-}
 -(void)textViewDidChange:(UITextView *)textView{
     if (textView.text==nil) {
         code=0;
@@ -82,7 +71,6 @@
 
 #pragma  mark - 点击按钮
 -(void)loginBtnClick{
-    [codeTextView resignFirstResponder];
     if (code==0) {
         codeTextView.layer.borderColor = [UIColor redColor].CGColor;
         return;

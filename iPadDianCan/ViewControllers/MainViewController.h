@@ -13,20 +13,21 @@
 #import "OrderListController.h"
 #import "RecipeView.h"
 #import "HHFullScreenViewController.h"
-#import "FoldingView.h"
+#import "FoldingViewController.h"
 #import "BadgeButton.h"
 #import "LoginView.h"
 #import "AFKPageFlipper.h"
+#import "TextAlertView.h"
 
-@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,ImageClickDelegate,UIGestureRecognizerDelegate,CheckOrderDelegate,SearchViewDelegate,LocationToCellDelegate,RefreshOrderDelegate,BgClickDelegate>{
+@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,ImageClickDelegate,UIGestureRecognizerDelegate,CheckOrderDelegate,SearchViewDelegate,LocationToCellDelegate,RefreshOrderDelegate,BgClickDelegate,TextAlertViewDelegate>{
     NSInteger pageCount;
     HHFullScreenViewController *viewController;
+    RecipeSearchControllerViewController *recipeSearchController;
     NSMutableArray *allIndexPaths;
     NSMutableArray *allRecipes;
 }
-@property(nonatomic,retain)RecipeSearchControllerViewController *recipeSearchController;
 @property(nonatomic,retain)UITableView *foodTable;
-@property(nonatomic,retain)FoldingView *foldingView;
+@property(nonatomic,retain)FoldingViewController *foldingViewController;
 @property(nonatomic,retain)UIView *mainContentView;
 @property(nonatomic,retain)NSMutableArray *allCategores;//所有种类
 @property(nonatomic,assign) BadgeButton *rightButton;

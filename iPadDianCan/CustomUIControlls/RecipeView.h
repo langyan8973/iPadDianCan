@@ -22,7 +22,7 @@
 @property(nonatomic,retain)UILabel *priceLabel;
 @property(nonatomic,retain)UILabel *countLabel;
 @property(nonatomic) NSInteger recipeCount;
-@property(nonatomic,assign) id<ImageClickDelegate> imageDelegate;
+@property(nonatomic,retain) id<ImageClickDelegate> imageDelegate;
 + (id)createRoundedRectImage:(UIImage*)image size:(CGSize)size;
 - (void)changeRecipeCount:(NSInteger)count;
 @end

@@ -26,9 +26,8 @@
 @end
 
 @implementation MainViewController
-@synthesize recipeSearchController;
 @synthesize foodTable;
-@synthesize foldingView;
+@synthesize foldingViewController;
 @synthesize mainContentView;
 @synthesize orderListController;
 @synthesize allCategores;
@@ -76,14 +75,14 @@
         [viewController.view setFrame:CGRectMake(0, 0, 702, 960)];
         viewController.locationToCellDelegate=self;
         viewController.refreshOrderDelegate=self;
-        foldingView=[[FoldingView alloc] initWithFrame:CGRectMake(0, 0, 45, 960)];
+        foldingViewController=[[FoldingViewController alloc] initWithFrame:CGRectMake(0, 0, 45, 960)];
         [self addTableShadow];
-        foldingView.foodTable=self.foodTable;
-        foldingView.searchDelegate=self;
-        foldingView.locationToCellDelegate=self;
+        foldingViewController.foodTable=self.foodTable;
+        foldingViewController.searchDelegate=self;
+        foldingViewController.locationToCellDelegate=self;
         
         mainContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 960)];
-        [mainContentView addSubview:foldingView];
+        [mainContentView addSubview:foldingViewController];
         [mainContentView addSubview:foodTable];
         [self.view addSubview:mainContentView];        
         
@@ -209,7 +208,7 @@
             }
             
             orderListController.allCategores=self.allCategores;
-            foldingView.allCategores=self.allCategores;
+            foldingViewController.allCategores=self.allCategores;
             recipeSearchController.allCategores=self.allCategores;
             [foodTable reloadData];
             
@@ -248,7 +247,7 @@
 #pragma mark -UITableSouceDelegate
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return  allCategores.count;
+    return allCategores.count;
 }
 
 
@@ -473,7 +472,7 @@
     }
     if ([rightButton tag]==100) {
         TextAlertView *tat=[[TextAlertView alloc] init];
-        [tat setDelegate:self];
+        tat.textAlertViewDelegate=self;
         [tat show];
         [tat release];
     }
@@ -497,6 +496,27 @@
         }
         
     }
+}
+#pragma mark -TextAlertViewDelegate
+-(void)checkIn:(NSInteger)checkNum{
+    [Order rid:self.rid Code:checkNum Order:^(Order *order) {
+        NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
+        NSNumber *numoid=[NSNumber numberWithInteger:order.oid];
+        [ud setValue:numoid forKey:@"oid"];
+        [ud synchronize];
+        [rightButton setTitle:@"我的订单" forState:UIControlStateNormal];
+        [rightButton setTag:101];
+        [self synchronizeOrder:order];
+        
+        [self.view insertSubview:orderListController.view atIndex:2];
+        [self.view bringSubviewToFront:orderListController.view];
+        [orderListController.view bringSubviewToFront:orderListController.table];
+        orderListController.currentOrder=self.currentOrder;
+    } failure:^{
+        MessageView *mv=[[[MessageView alloc] initWithMessageText:@"开台码错误"] autorelease];
+        [mv show];
+    }];
+
 }
 
 #pragma  mark - BgClickDelegate
@@ -577,8 +597,9 @@
             NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
             [ud setValue:0 forKey:@"rid"];
             [ud synchronize];
-            foldingView.searchDelegate = nil;
+            
             [self.navigationController popViewControllerAnimated:YES];
+            [self release];
         }
         
     }
@@ -679,16 +700,12 @@
 
 -(void)dealloc{
     [mainContentView release];
-    [foldingView release];
+    [foldingViewController release];
     [foodTable release];
     [allCategores release];
     [allIndexPaths release];
     [recipeSearchController release];
     [allRecipes release];
-    if (viewController.oPened) {
-        [viewController.fromView removeFromSuperview];
-        [viewController dismiss];
-    }
     [viewController release];
     [orderListController release];
     [super dealloc];

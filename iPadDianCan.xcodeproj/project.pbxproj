@@ -32,7 +32,7 @@
 		4C6E4032173C8AF3003490E8 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E4031173C8AF3003490E8 /* LoginView.m */; };
 		4C6E4034173C9134003490E8 /* restaurantloginbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6E4033173C9134003490E8 /* restaurantloginbtn.png */; };
 		4C6E4036173C929E003490E8 /* calledrestaurantloginbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6E4035173C929E003490E8 /* calledrestaurantloginbtn.png */; };
-		4C6E4930173A2099003028E4 /* FoldingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E492F173A2099003028E4 /* FoldingView.m */; };
+		4C6E4930173A2099003028E4 /* FoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E492F173A2099003028E4 /* FoldingViewController.m */; };
 		4C70E444174C651A00F6363E /* FoldingBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70E443174C651A00F6363E /* FoldingBack@2x.png */; };
 		4C70E446174C70EE00F6363E /* dish_46.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70E445174C70EE00F6363E /* dish_46.png */; };
 		4C70E448174C721300F6363E /* categoryCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70E447174C721300F6363E /* categoryCell@2x.png */; };
@@ -92,6 +92,8 @@
 		D026AC4F1727C9960093CBC7 /* RecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D026AC4E1727C9960093CBC7 /* RecipeView.m */; };
 		D026AC511727D0A10093CBC7 /* imageWaiting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D026AC501727D0A10093CBC7 /* imageWaiting@2x.png */; };
 		D026AC531727F9120093CBC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D026AC521727F9110093CBC7 /* QuartzCore.framework */; };
+		D082379A187FBE640097C1DD /* navBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D0823798187FBE640097C1DD /* navBackButton.png */; };
+		D082379B187FBE640097C1DD /* navBackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0823799187FBE640097C1DD /* navBackButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,8 +128,8 @@
 		4C6E4031173C8AF3003490E8 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		4C6E4033173C9134003490E8 /* restaurantloginbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurantloginbtn.png; sourceTree = "<group>"; };
 		4C6E4035173C929E003490E8 /* calledrestaurantloginbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calledrestaurantloginbtn.png; sourceTree = "<group>"; };
-		4C6E492E173A2099003028E4 /* FoldingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldingView.h; path = ../ViewControllers/FoldingView.h; sourceTree = "<group>"; };
-		4C6E492F173A2099003028E4 /* FoldingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoldingView.m; path = ../ViewControllers/FoldingView.m; sourceTree = "<group>"; };
+		4C6E492E173A2099003028E4 /* FoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldingViewController.h; path = ViewControllers/FoldingViewController.h; sourceTree = "<group>"; };
+		4C6E492F173A2099003028E4 /* FoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoldingViewController.m; path = ViewControllers/FoldingViewController.m; sourceTree = "<group>"; };
 		4C70E443174C651A00F6363E /* FoldingBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FoldingBack@2x.png"; sourceTree = "<group>"; };
 		4C70E445174C70EE00F6363E /* dish_46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dish_46.png; sourceTree = "<group>"; };
 		4C70E447174C721300F6363E /* categoryCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "categoryCell@2x.png"; sourceTree = "<group>"; };
@@ -225,6 +227,8 @@
 		D026AC4E1727C9960093CBC7 /* RecipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeView.m; sourceTree = "<group>"; };
 		D026AC501727D0A10093CBC7 /* imageWaiting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imageWaiting@2x.png"; sourceTree = "<group>"; };
 		D026AC521727F9110093CBC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0823798187FBE640097C1DD /* navBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBackButton.png; sourceTree = "<group>"; };
+		D0823799187FBE640097C1DD /* navBackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBackButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +386,8 @@
 			children = (
 				4C6DD539172BB6D1001BFDA0 /* CategoryTableViewController.h */,
 				4C6DD53A172BB6D1001BFDA0 /* CategoryTableViewController.m */,
+				4C6E492E173A2099003028E4 /* FoldingViewController.h */,
+				4C6E492F173A2099003028E4 /* FoldingViewController.m */,
 				4C5C4B4617368C1E006B3BFA /* HHFullScreenViewController.h */,
 				4C5C4B4717368C1E006B3BFA /* HHFullScreenViewController.m */,
 				D026AC3B17278A9D0093CBC7 /* MainViewController.h */,
@@ -408,8 +414,6 @@
 		D026AC3F172792F20093CBC7 /* CustomUIControlls */ = {
 			isa = PBXGroup;
 			children = (
-				4C6E492E173A2099003028E4 /* FoldingView.h */,
-				4C6E492F173A2099003028E4 /* FoldingView.m */,
 				4C75807C173B535A005826AC /* BadgeButton.h */,
 				4C75807D173B535A005826AC /* BadgeButton.m */,
 				4C9F37651732A43500F8A349 /* MyAlertView.h */,
@@ -439,6 +443,8 @@
 		D026AC42172792F20093CBC7 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D0823798187FBE640097C1DD /* navBackButton.png */,
+				D0823799187FBE640097C1DD /* navBackButton@2x.png */,
 				4CBFBF4B17CB1C14001BF858 /* restaurantLogin@2x.png */,
 				4C81C6B11793B9DD009F53DE /* leftBarBg@2x.png */,
 				4C697B51174E009700543CD2 /* default.png */,
@@ -502,6 +508,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = ztb;
+				TargetAttributes = {
+					D026ABE0172785C70093CBC7 = {
+						DevelopmentTeam = 73AAN9795Q;
+					};
+				};
 			};
 			buildConfigurationList = D026ABDC172785C70093CBC7 /* Build configuration list for PBXProject "iPadDianCan" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -531,6 +542,8 @@
 				D026ABFB172785C70093CBC7 /* Default-568h@2x.png in Resources */,
 				D026AC47172798D30093CBC7 /* MainViewBg@2x.png in Resources */,
 				D026AC4C1727BF0A0093CBC7 /* CategoryHeadBg@2x.png in Resources */,
+				D082379A187FBE640097C1DD /* navBackButton.png in Resources */,
+				D082379B187FBE640097C1DD /* navBackButton@2x.png in Resources */,
 				D026AC511727D0A10093CBC7 /* imageWaiting@2x.png in Resources */,
 				4C6DD542172BB77E001BFDA0 /* categoryTableViewBg@2x.png in Resources */,
 				4C4337DC172C05B50066888E /* categoryTablecellSelectBg@2x.png in Resources */,
@@ -606,7 +619,7 @@
 				4C9F37671732A43500F8A349 /* MyAlertView.m in Sources */,
 				4C5C4B4817368C1E006B3BFA /* HHFullScreenViewController.m in Sources */,
 				4C81042517375DCB0001CB9B /* RecipeLargeView.m in Sources */,
-				4C6E4930173A2099003028E4 /* FoldingView.m in Sources */,
+				4C6E4930173A2099003028E4 /* FoldingViewController.m in Sources */,
 				4C75807E173B535A005826AC /* BadgeButton.m in Sources */,
 				4C6E4032173C8AF3003490E8 /* LoginView.m in Sources */,
 				4C380B7F1745DE1B00133CF1 /* MainViewController.m in Sources */,
@@ -645,7 +658,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: CHEN YANQIONG (5KP65D7Q8S)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -658,9 +672,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos6.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -677,15 +692,17 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CHEN YANQIONG (73AAN9795Q)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos6.0;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -694,11 +711,15 @@
 		D026ABFF172785C70093CBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPadDianCan/iPadDianCan-Prefix.pch";
 				INFOPLIST_FILE = "iPadDianCan/iPadDianCan-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "微特 HD";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -706,11 +727,15 @@
 		D026AC00172785C70093CBC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPadDianCan/iPadDianCan-Prefix.pch";
 				INFOPLIST_FILE = "iPadDianCan/iPadDianCan-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "微特 HD";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
